@@ -13,7 +13,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    z-index: 10; /* Ensure the header is above the carousel */
+    z-index: 10;
 }
 
 /* Sections in the header */
@@ -46,12 +46,12 @@ nav button {
     font-family: inherit;
 }
 
-/* Home button next to the hamburger */
+/* Home button */
 .home-button {
     margin-left: 10px;
 }
 
-/* UNT Logo centered */
+/* UNT Logo */
 .logo {
     height: 50px;
     width: auto;
@@ -73,7 +73,7 @@ nav button {
     left: 0;
     width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 15; /* Ensure the menu is above the carousel */
+    z-index: 15;
 }
 
 .menuItem {
