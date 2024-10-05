@@ -3,23 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Hamburger Menu</title>
+    <title>UNT Professor's Rating</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your custom styles -->
 </head>
 <body>
+
+    <!-- Header Section -->
     <nav>
-        <div class="hamburger">
-            <div class="menuIcon">☰</div>
-            <div class="closeIcon" style="display: none;">✖</div>
+        <!-- Left Section: Hamburger Menu and Home Button -->
+        <div class="left-section">
+            <div class="hamburger">
+                <div class="menuIcon">☰</div>
+                <div class="closeIcon" style="display: none;">✖</div>
+            </div>
+            <button class="home-button" onclick="window.location.reload();">Home</button>
         </div>
-        <ul class="menu">
-            <li class="menuItem">Home</li>
-            <li class="menuItem">College Majors</li>
-            <li class="menuItem">About</li>
-            <li class="menuItem">Services</li>
-            <li class="menuItem">Contact</li>
-        </ul>
+
+        <!-- Center Section: UNT Logo -->
+        <div class="center-section">
+            <img src="Images/lettermark_wordmark_diving_eagle_combo_green.svg" alt="UNT Logo" class="logo">
+        </div>
+
+        <!-- Right Section: Report Issue and Login Buttons -->
+        <div class="right-section">
+            <button>Report Issue</button>
+            <button>Login</button>
+        </div>
     </nav>
-    <script src="hamburger.js"></script>
+
+    <!-- Hamburger Menu Dropdown -->
+    <ul class="menu" style="display: none;">
+        <li class="menuItem">Home</li>
+        <li class="menuItem">College Majors</li>
+        <li class="menuItem">About</li>
+        <li class="menuItem">Services</li>
+        <li class="menuItem">Contact</li>
+    </ul>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="slides" id="slides">
+            <!-- Each Slide -->
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7f7f/333?text=Slide+1" alt="Slide 1"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/7f7fff/333?text=Slide+2" alt="Slide 2"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fff7f/333?text=Slide+3" alt="Slide 3"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/ffff7f/333?text=Slide+4" alt="Slide 4"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7fff/333?text=Slide+5" alt="Slide 5"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fffff/333?text=Slide+6" alt="Slide 6"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/ffbf7f/333?text=Slide+7" alt="Slide 7"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fbf7f/333?text=Slide+8" alt="Slide 8"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7fdf/333?text=Slide+9" alt="Slide 9"></div>
+            <div class="slide"><img src="https://via.placeholder.com/1500x400/df7fff/333?text=Slide+10" alt="Slide 10"></div>
+        </div>
+        <div class="prev" onclick="moveSlides(-1)">❮</div>
+        <div class="next" onclick="moveSlides(1)">❯</div>
+    </div>
+
+    <script src="hamburger.js"></script> <!-- Link the new hamburger JS -->
+    <script>
+        // Carousel functionality (same as before)
+        let slideIndex = 0;
+
+        function moveSlides(step) {
+            slideIndex = (slideIndex + step + 10) % 10;
+            document.getElementById('slides').style.transform = `translateX(-${slideIndex * 10}%)`;
+        }
+
+        // Function to automatically change slides every 10 seconds
+        function autoSlide() {
+            moveSlides(1);
+        }
+
+        // Set the interval to automatically move the slides every 10 seconds
+        setInterval(autoSlide, 10000);
+    </script>
 </body>
 </html>
