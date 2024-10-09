@@ -27,7 +27,24 @@
         <!-- Right Section: Report Issue and Login Buttons -->
         <div class="right-section">
             <button>Report Issue</button>
-            <button>Login</button>
+            
+            <!-- Login Button -->
+            <button id="loginButton">Login</button>
+
+            <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Login with Certificate</h2>
+                    <form id="loginForm">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required><br><br>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div id="loginMessage"></div>
+                </div>
+            </div>
+
         </div>
     </nav>
 
