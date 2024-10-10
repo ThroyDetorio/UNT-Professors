@@ -79,3 +79,4 @@ window.onclick = function(event) {
         loginModal.style.display = 'none';  // Hide the modal if clicked outside
     }
 };
+
