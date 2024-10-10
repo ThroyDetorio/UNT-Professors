@@ -29,20 +29,22 @@ app.use((req, res, next) => {
 
 // Handle login
 app.post('/login', (req, res) => {
-    const { username } = req.body;
+    const { username, password } = req.body;  // Extract username and password from the request
     const clientCert = req.connection.getPeerCertificate();
 
+    // Validate the client certificate and check the username and password
     if (clientCert && clientCert.subject) {
         const clientUsername = clientCert.subject.CN; // Common Name as username
-        if (clientUsername === username) {
-            res.json({ success: true });
+        if (clientUsername === username && password === 'expectedPassword') {
+            res.json({ success: true });   // Login successful
         } else {
-            res.json({ success: false });
+            res.json({ success: false });  // Login failed due to incorrect credentials
         }
     } else {
         res.status(400).send('No client certificate found.');
     }
 });
+
 
 // Start the HTTPS server
 https.createServer(serverOptions, app).listen(3000, () => {

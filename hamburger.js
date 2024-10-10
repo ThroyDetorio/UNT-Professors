@@ -39,17 +39,18 @@ closeModal.addEventListener('click', () => {
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
     e.preventDefault();    // Prevent the form from refreshing the page
 
-    // Get the username entered by the user
+    // Get the username and password entered by the user
     const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
     try {
-        // Send a POST request to the server with the username
+        // Send a POST request to the server with the username and password
         const response = await fetch('/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username }),    // Send the username as JSON
+            body: JSON.stringify({ username, password }),    // Send the username and password as JSON
         });
 
         // Process the server's response
@@ -71,9 +72,11 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     }
 });
 
+
 // Close the modal when clicking outside of the modal content
 window.onclick = function(event) {
     if (event.target == loginModal) {
         loginModal.style.display = 'none';  // Hide the modal if clicked outside
     }
 };
+
