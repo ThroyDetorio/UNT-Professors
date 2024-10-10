@@ -1,171 +1,216 @@
-/* General styles */
+/* General styles for the HTML and body elements */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set the font for the entire page */
 }
 
-/* Header */
+/* Header styles */
+/* Styling for the navigation bar */
 nav {
-    background-color: #90ee90;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 10;
+    background-color: #90ee90; /* Light green background */
+    padding: 10px; /* Padding around the nav bar content */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items in the center */
+    justify-content: space-between; /* Space out elements horizontally */
+    position: relative; /* For correct layering */
+    z-index: 10; /* Ensure nav bar appears above other elements */
 }
 
 /* Sections in the header */
 .left-section, .right-section, .center-section {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically align content */
 }
 
 .left-section {
-    flex: 1;
+    flex: 1; /* Takes up equal space on the left side */
 }
 
 .right-section {
-    flex: 1;
-    justify-content: flex-end;
+    flex: 1; /* Takes up equal space on the right side */
+    justify-content: flex-end; /* Align items to the right */
 }
 
 .center-section {
-    flex: 1;
-    justify-content: center;
+    flex: 1; /* Takes up equal space in the center */
+    justify-content: center; /* Center-align the content */
 }
 
-/* General button style for all buttons */
+/* General button style for all buttons inside the nav bar */
 nav button {
-    background: none;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 5px 15px;
-    font-family: inherit;
+    background: none; /* No background color */
+    border: none; /* Remove borders */
+    font-size: 18px; /* Set font size */
+    cursor: pointer; /* Show pointer on hover */
+    padding: 5px 15px; /* Padding inside buttons */
+    font-family: inherit; /* Inherit font from parent */
 }
 
-/* Home button */
+/* Specific style for the home button */
 .home-button {
-    margin-left: 10px;
+    margin-left: 10px; /* Add a margin to the left */
 }
 
-/* UNT Logo */
+/* UNT Logo style */
 .logo {
-    height: 50px;
-    width: auto;
+    height: 50px; /* Set the logo height */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
 }
 
 /* Hamburger Menu Styles */
+/* Style for the hamburger menu container */
 .hamburger {
-    cursor: pointer;
+    cursor: pointer; /* Show pointer on hover */
 }
 
+/* Styles for the dropdown menu */
 .menu {
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 15;
+    display: none; /* Hide the menu by default */
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    background-color: white; /* White background for the menu */
+    position: absolute; /* Position relative to parent container */
+    top: 60px; /* Position below the nav bar */
+    left: 0; /* Align to the left */
+    width: 200px; /* Set the width of the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+    z-index: 15; /* Ensure menu appears on top */
 }
 
+/* Style for each menu item in the hamburger menu */
 .menuItem {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
+    padding: 10px 20px; /* Padding inside menu items */
+    border-bottom: 1px solid #ddd; /* Add a divider between items */
+    cursor: pointer; /* Show pointer on hover */
 }
 
+/* Hover effect for menu items */
 .menuItem:hover {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light grey background on hover */
 }
 
+/* Hamburger and close icon styling */
 .menuIcon, .closeIcon {
-    font-size: 24px;
+    font-size: 24px; /* Set the icon size */
 }
 
 /* Carousel styles */
+/* Container for the carousel */
 .carousel-container {
-    position: relative;
-    max-width: 100%;
-    height: 400px;
-    margin: auto;
-    overflow: hidden;
+    position: relative; /* Position relative to parent */
+    max-width: 100%; /* Make the carousel responsive */
+    height: 400px; /* Set fixed height */
+    margin: auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow content */
 }
 
+/* Flexbox container for the carousel slides */
 .slides {
-    display: flex;
-    width: 1000%;
-    transition: 0.5s;
+    display: flex; /* Use flexbox to align slides horizontally */
+    width: 1000%; /* Create a wide area for sliding */
+    transition: 0.5s; /* Smooth sliding transition */
 }
 
+/* Style for each individual slide */
 .slide {
-    width: 10%;
-    flex: 1 0 auto;
+    width: 10%; /* Each slide takes 10% of the container width */
+    flex: 1 0 auto; /* Ensure slides are flexible but have a base width */
 }
 
+/* Image styles inside the slide */
 .slide img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+    width: 100%; /* Make the image take up the entire slide */
+    height: 400px; /* Fixed height for images */
+    object-fit: cover; /* Cover the entire area without distortion */
 }
 
+/* Style for the previous and next buttons on the carousel */
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    cursor: pointer;
+    position: absolute; /* Position buttons on top of carousel */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for proper centering */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white; /* White text color */
+    padding: 10px; /* Padding inside the buttons */
+    cursor: pointer; /* Show pointer on hover */
 }
 
+/* Position the previous button */
 .prev {
-    left: 10px;
+    left: 10px; /* Align the previous button on the left */
 }
 
+/* Position the next button */
 .next {
-    right: 10px;
+    right: 10px; /* Align the next button on the right */
 }
 
 /* Modal styles */
+/* Container for the modal (login form) */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 20;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fix modal in place */
+    z-index: 20; /* Ensure modal appears above everything */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    justify-content: center; /* Center modal horizontally */
+    align-items: center; /* Center modal vertically */
 }
 
+/* Style for the modal content */
 .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-    text-align: center;
-    position: relative;
+    background-color: #90ee90; /* Green background */
+    padding: 20px; /* Padding inside modal */
+    border-radius: 5px; /* Rounded corners */
+    width: 300px; /* Fixed width for the modal */
+    text-align: center; /* Center text */
+    position: relative; /* Relative positioning */
 }
 
+/* Close button for the modal */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
+    position: absolute; /* Position inside modal content */
+    top: 10px; /* Position near the top */
+    right: 10px; /* Position near the right */
+    font-size: 20px; /* Large font size */
+    cursor: pointer; /* Show pointer on hover */
 }
 
+/* Message area for login feedback */
 #loginMessage {
-    margin-top: 10px;
-    color: red;
+    margin-top: 10px; /* Space above the message */
+    color: red; /* Error messages in red */
 }
+
+/* Styling for input fields inside the login form */
+#loginForm input[type="text"], #loginForm input[type="password"] {
+    width: 100%; /* Full width input fields */
+    padding: 8px; /* Padding inside the input */
+    margin: 6px 0; /* Space between input fields */
+    display: inline-block; /* Keep fields inline */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+/* Gray button style for the login button */
+.default {
+    border-color: #e7e7e7; /* Light gray border */
+    color: black; /* Black text */
+    padding: 10px 20px; /* Padding to make it look more button-like */
+    border-radius: 5px; /* boreder radius for the button */
+    background-color: white; /* Default background color */
+    border-width: 1px; /* Define the border width */
+    cursor: pointer; /* Show pointer on hover */
+  }
+  
+  .default:hover {
+    background: #e7e7e7; /* Gray background on hover */
+  }
+  
+  
