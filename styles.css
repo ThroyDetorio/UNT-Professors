@@ -194,6 +194,8 @@ nav button {
     padding: 8px; /* Padding inside the input */
     margin: 6px 0; /* Space between input fields */
     display: inline-block; /* Keep fields inline */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     border: 1px solid #ccc; /* Light grey border */
     border-radius: 4px; /* Rounded corners */
     box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
