@@ -3,6 +3,7 @@ body, html {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     font-family: Arial, sans-serif; /* Set the font for the entire page */
+    height: 100%; /* Full height for centering */
 }
 
 /* Header styles */
@@ -212,5 +213,60 @@ nav button {
   .default:hover {
     background: #e7e7e7; /* Gray background on hover */
   }
-  
+
+/* General styles for the HTML and body elements */
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set the font for the entire page */
+    height: 100%; /* Ensure full height for centering */
+}
+
+/* Specific styles for the report issue page */
+.report-issue-page main {
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: calc(100vh - 60px); /* Full height minus nav bar height */
+    padding: 20px; /* Add some padding */
+}
+
+/* Form styles specific to the report issue page */
+.report-issue-page form {
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 400px; /* Maximum width */
+}
+
+/* Input fields and textarea styles for the report issue page */
+.report-issue-page input[type="text"],
+.report-issue-page textarea {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside the input */
+    margin: 6px 0; /* Space between input fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+/* Submit button styling for the report issue page */
+.report-issue-page button[type="submit"] {
+    background-color: #90ee90; /* Match the nav color */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 16px; /* Set font size */
+}
+
+/* Submit button hover effect for the report issue page */
+.report-issue-page button[type="submit"]:hover {
+    background-color: #7ed957; /* Darker green on hover */
+}
+
   
