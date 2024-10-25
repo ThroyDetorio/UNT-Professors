@@ -54,9 +54,8 @@ nav button {
 
 /* UNT Logo style */
 .logo {
-    height: 50px; /* Set the logo height */
+    height: 150px; /* Set the logo height */
     width: auto; /* Adjust width automatically to maintain aspect ratio */
-    padding: 100px; /*Test code to make logo bigger */
 }
 
 /* Hamburger Menu Styles */
