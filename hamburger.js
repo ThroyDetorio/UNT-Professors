@@ -76,7 +76,7 @@ window.onclick = function(event) {
     if (event.target == loginModal) {
         loginModal.style.display = 'none';  // Hide the modal if clicked outside
     }
-    
+};
 // Dropdown functionality for College Majors
 const collegeMajorsLink = document.querySelector('.menuItem > a'); // Adjust selector if necessary
 collegeMajorsLink.addEventListener('click', function(e) {
@@ -85,5 +85,4 @@ collegeMajorsLink.addEventListener('click', function(e) {
     if (subMenu) {
         subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block'; // Toggle display
     }
-}    
-};
+}};
