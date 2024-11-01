@@ -86,3 +86,6 @@ collegeMajorsLink.addEventListener('click', function(e) {
         subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block'; // Toggle display
     }
 }};
+
+console.log('Menu opened');
+
