@@ -76,15 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Dropdown functionality for College Majors
-    const collegeMajorsLink = document.querySelector('.menuItem > a');
-    if (collegeMajorsLink) {
-        collegeMajorsLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            const subMenu = this.nextElementSibling;
-            if (subMenu) {
-                subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+    // Dropdown functionality for all menu items with sub-menus
+    document.querySelectorAll('.menuItem > a').forEach(item => {
+        item.addEventListener('click', function(e) {
+            const subMenu = this.nextElementSibling; // Get the next element (sub-menu)
+            if (subMenu && subMenu.classList.contains('sub-menu')) {
+                e.preventDefault(); // Prevent the default link behavior
+                subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block'; // Toggle display
             }
         });
-    }
+    });
 });
