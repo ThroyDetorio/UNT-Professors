@@ -1,32 +1,46 @@
 // database.js
 const { MongoClient, ServerApiVersion } = require('mongodb');
-require('dotenv').config(); // Load environment variables
+const fs = require('fs');
+require('dotenv').config();
 
-// Use the environment variable for the MongoDB password
-const uri = 'mongodb+srv://serhaterdogmus1:byteme@cluster0.gsge9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const uri = process.env.MONGO_URI;
 
-// Create a MongoClient instance
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
 });
 
 async function connectToDatabase() {
   try {
-    // Connect to MongoDB
     await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
     console.log("Successfully connected to MongoDB!");
   } catch (error) {
-    console.error("Failed to connect to MongoDB:", error);
+    console.error("MongoDB connection error:", error);
+  }
+}
+
+// Function to insert users from a JSON file
+async function insertUsersFromFile(filePath) {
+  try {
+    await client.connect();
+    const database = client.db("your_database_name"); // replace with your database name
+    const users = database.collection("users");
+
+    // Read and parse the JSON file
+    const fileData = fs.readFileSync(filePath, 'utf-8');
+    const usersArray = JSON.parse(fileData);
+
+    // Insert users into MongoDB
+    const result = await users.insertMany(usersArray);
+    console.log(`${result.insertedCount} users inserted.`);
+  } catch (error) {
+    console.error("Error inserting users from file:", error);
   } finally {
-    // Close the connection after verification
     await client.close();
   }
 }
 
-module.exports = connectToDatabase;
+module.exports = { connectToDatabase, insertUsersFromFile };
