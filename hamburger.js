@@ -87,3 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const collegeMajorsLink = document.querySelector('.college-majors-link');
+const subMenu = document.querySelector('.sub-menu');
+
+if (collegeMajorsLink) {
+    collegeMajorsLink.addEventListener('mouseover', () => {
+        subMenu.style.display = 'block'; // Show the sub-menu on hover
+    });
+
+    collegeMajorsLink.addEventListener('mouseout', () => {
+        subMenu.style.display = 'none'; // Hide the sub-menu when not hovering
+    });
+
+    // Ensure the sub-menu stays open if hovering over it
+    subMenu.addEventListener('mouseover', () => {
+        subMenu.style.display = 'block';
+    });
+
+    subMenu.addEventListener('mouseout', () => {
+        subMenu.style.display = 'none';
+    });
+}
+
