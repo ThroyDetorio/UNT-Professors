@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close the modal when clicking outside of the modal content
     window.onclick = function(event) {
-        if (loginModal.style.display === 'flex' && event.target == loginModal) {
+        if (loginModal.style.display === 'flex' && event.target === loginModal) {
             loginModal.style.display = 'none';
         }
     };
@@ -86,27 +86,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Specific handling for the College Majors link
+    const collegeMajorsLink = document.querySelector('.college-majors-link');
+    const subMenu = document.querySelector('.sub-menu');
+
+    if (collegeMajorsLink) {
+        collegeMajorsLink.addEventListener('mouseover', () => {
+            subMenu.style.display = 'block'; // Show the sub-menu on hover
+        });
+
+        collegeMajorsLink.addEventListener('mouseout', () => {
+            subMenu.style.display = 'none'; // Hide the sub-menu when not hovering
+        });
+
+        // Ensure the sub-menu stays open if hovering over it
+        subMenu.addEventListener('mouseover', () => {
+            subMenu.style.display = 'block';
+        });
+
+        subMenu.addEventListener('mouseout', () => {
+            subMenu.style.display = 'none';
+        });
+    }
 });
-
-const collegeMajorsLink = document.querySelector('.college-majors-link');
-const subMenu = document.querySelector('.sub-menu');
-
-if (collegeMajorsLink) {
-    collegeMajorsLink.addEventListener('mouseover', () => {
-        subMenu.style.display = 'block'; // Show the sub-menu on hover
-    });
-
-    collegeMajorsLink.addEventListener('mouseout', () => {
-        subMenu.style.display = 'none'; // Hide the sub-menu when not hovering
-    });
-
-    // Ensure the sub-menu stays open if hovering over it
-    subMenu.addEventListener('mouseover', () => {
-        subMenu.style.display = 'block';
-    });
-
-    subMenu.addEventListener('mouseout', () => {
-        subMenu.style.display = 'none';
-    });
-}
-
