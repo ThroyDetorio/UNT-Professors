@@ -1,31 +1,26 @@
-// server.js
 const express = require("express");
+const cors = require("cors"); // Import CORS
 const { connectToDatabase, closeConnection, getProfessorWithRatings } = require("./database");
 
 const app = express();
 const PORT = 3000;
 
-// Connect to the database
-app.use(async (req, res, next) => {
-  await connectToDatabase();
-  next();
-});
+// Enable CORS for all routes
+app.use(cors());
 
-// Endpoint to get professor by ID along with ratings
 app.get("/professor/:id", async (req, res) => {
   const professorId = req.params.id;
-  const professorData = await getProfessorWithRatings(professorId);
-  if (professorData) {
-    res.json(professorData);
-  } else {
-    res.status(404).json({ message: "Professor not found" });
+  try {
+    const professorData = await getProfessorWithRatings(professorId);
+    if (professorData) {
+      res.json(professorData);
+    } else {
+      res.status(404).json({ message: "Professor not found" });
+    }
+  } catch (error) {
+    console.error("Error fetching professor data:", error);
+    res.status(500).json({ message: "Error fetching professor data" });
   }
-});
-
-// Close database connection on exit
-app.use(async (req, res, next) => {
-  await closeConnection();
-  next();
 });
 
 app.listen(PORT, () => {
