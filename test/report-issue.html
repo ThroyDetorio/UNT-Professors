@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="report-issue-page">
+    <nav>
+        <div class="left-section">
+            <div class="hamburger">
+                <div class="menuIcon">☰</div>
+                <div class="closeIcon" style="display: none;">✖</div>
+            </div>
+            <button class="home-button" onclick="window.location.href='index.html';">Home</button>
+        </div>
+        <div class="center-section">
+            <img src="Images/lettermark_wordmark_diving_eagle_combo_black.svg" alt="UNT Logo" class="logo">
+        </div>
+        <div class="right-section">
+            <button class="report-button" onclick="window.location.reload();">Report Issue</button>
+            <button id="loginButton">Login</button>
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Login with Certificate</h2>
+                    <form id="loginForm">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required><br><br>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div id="loginMessage"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hamburger Menu Dropdown -->
+    <ul class="menu" style="display: none;">
+        <li class="menuItem"><a href="index.html">Home</a></li>
+        <li class="menuItem"><a href="college-majors.html">College Majors</a></li>
+        <li class="menuItem"><a href="report-issue.html">Report Issue</a></li>
+    </ul>
+
+    <main>
+        <h1>Report Issue</h1>
+        <p>Fill out the form below to report an issue.</p>
+        <form id="issueReportForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="euid">EUID:</label><br>
+            <input type="text" id="euid" name="euid" required><br><br>
+
+            <label for="class">Class:</label><br>
+            <input type="text" id="class" name="class" required><br><br>
+
+            <label for="issue">Issue:</label><br>
+            <textarea id="issue" name="issue" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit Issue</button>
+        </form>
+    </main>
+
+    <script src="hamburger.js"></script>
+</body>
+</html>

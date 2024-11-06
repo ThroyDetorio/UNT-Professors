@@ -33,11 +33,10 @@ async function closeConnection() {
   }
 }
 
-
 // Function to insert a professor
 async function addProfessor(professorData) {
   try {
-    const database = client.db("your_database_name"); // replace with your database name
+    const database = client.db("UNT_Prof_db"); // replace with your database name
     const professors = database.collection("professors");
     const result = await professors.insertOne(professorData);
     console.log(`Professor added with _id: ${result.insertedId}`);
@@ -50,7 +49,7 @@ async function addProfessor(professorData) {
 // Function to add a rating for a professor
 async function addRating(professorId, ratingData) {
   try {
-    const database = client.db("your_database_name");
+    const database = client.db("UNT_Prof_db");
     const ratings = database.collection("ratings");
     const result = await ratings.insertOne({ professorId: new ObjectId(professorId), ...ratingData });
     console.log(`Rating added with _id: ${result.insertedId}`);
@@ -62,7 +61,7 @@ async function addRating(professorId, ratingData) {
 // Function to get a professor with all ratings
 async function getProfessorWithRatings(professorId) {
   try {
-    const database = client.db("your_database_name");
+    const database = client.db("UNT_Prof_db");
     const professors = database.collection("professors");
     const ratings = database.collection("ratings");
 
@@ -78,6 +77,7 @@ async function getProfessorWithRatings(professorId) {
     return { ...professor, ratings: professorRatings };
   } catch (error) {
     console.error("Error retrieving professor with ratings:", error);
+    return null;
   }
 }
 
@@ -85,7 +85,7 @@ async function getProfessorWithRatings(professorId) {
 async function insertUsersFromFile(filePath) {
   try {
     await client.connect();
-    const database = client.db("your_database_name");
+    const database = client.db("UNT_Prof_db");
     const users = database.collection("users");
 
     // Read and parse the JSON file
