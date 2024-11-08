@@ -1,0 +1,881 @@
+[
+   {
+        "name": "Professor Robert Akl",
+        "department": "Computer Science and Engineering",
+        "rating": 3.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3020",
+                "section_number": "001",
+                "semester": "Spring 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "7:00 - 8:20 PM"
+                }
+            },
+            {
+                "course_code": "CSCE3020",
+                "section_number": "201",
+                "semester": "Spring 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "7:00 - 8:20 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Shahram D. Rohani",
+        "department": "Electrical Engineering",
+        "rating": 1.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2610",
+                "section_number": "002",
+                "semester": "Spring 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG2710",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Shuping Wang",
+        "department": "Electrical Engineering",
+        "rating": 2,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG3510",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG3520",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Robin J. Pottathuparambil",
+        "department": "Computer Science and Engineering",
+        "rating": 2.0,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4915",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3612",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Paul Tarau",
+        "department": "Computer Science and Engineering",
+        "rating": 3.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2100",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4010",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Tom Derryberry",
+        "department": "Electrical Engineering",
+        "rating": 4.3,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG4510",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG2710",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Jungkwun Kim",
+        "department": "Electrical Engineering",
+        "rating": 2.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG3511",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG3510",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Hung Luyen",
+        "department": "Electrical Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2610",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG5420",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Asif Baba",
+        "department": "Computer Science and Engineering",
+        "rating": 4.3,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4010",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE5520",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Ram Dantu",
+        "department": "Computer Science and Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4240",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4240",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Miguel Acevedo",
+        "department": "Electrucal Engineering",
+        "rating": 4.1,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2920",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG4340",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Sensong An",
+        "department": "Electrical Engineering",
+        "rating": 4.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG3410",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG3411",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Colleen Bailey",
+        "department": "Elecctrical Engineering",
+        "rating": 3.3,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2610",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG2905",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Shengli Fu",
+        "department": "Electrical Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG1910",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG4990",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Parthasarathy Guturu",
+        "department": "Electrical Engineering",
+        "rating": 2.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG4810",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG3710",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Elias Kougianos",
+        "department": "Electrical Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2711",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG4720",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Gayatri Mehta",
+        "department": "Eletrical Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG4760",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG4710",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor King man Siu",
+        "department": "Computer Science and Engineering",
+        "rating": 4.1,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG3510",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG4580",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Hyusim Park",
+        "department": "Electrical Engineering",
+        "rating": 3.1,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2610",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG3520",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Kamesh Namuduri",
+        "department": "Electrical Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG3811",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG3810",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Hua Sun",
+        "department": "Electrical Engineering",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "EENG2621",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "EENG4510",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    }
+,
+    {
+        "name": "Professor Beddhu Murali",
+        "department": "Computer Science and Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2100",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4357",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    }
+]

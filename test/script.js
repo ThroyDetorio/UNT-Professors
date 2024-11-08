@@ -1,17 +1,15 @@
-// script.js
+const apiUrl = "http://3.138.156.10:3000"; // Replace with your actual EC2 IP and port
 
-const apiUrl = "http://3.138.156.10:3000"; // Base URL for the API
-
+// Fetch and display the list of professors
 async function loadProfessorList() {
     try {
         const response = await fetch(`${apiUrl}/professors`);
-        console.log("Response from /professors:", response);
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
         const professors = await response.json();
-        console.log("Professor list:", professors);
         const professorSelect = document.getElementById("professorSelect");
 
+        // Populate dropdown with professor names
         professors.forEach(prof => {
             const option = document.createElement("option");
             option.value = prof._id;
@@ -23,29 +21,28 @@ async function loadProfessorList() {
     }
 }
 
+// Fetch and display selected professor's data based on selected ID
 async function loadProfessorData() {
     const professorId = document.getElementById("professorSelect").value;
     if (!professorId) return;
 
     try {
         const response = await fetch(`${apiUrl}/professor/${professorId}`);
-        console.log("Response from /professor/:id:", response);
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
         const data = await response.json();
-        console.log("Selected professor data:", data);
         const professorContainer = document.getElementById("professor-data");
 
+        // Display professor details and ratings
         professorContainer.innerHTML = `
             <h2>${data.name}</h2>
             <p><strong>Department:</strong> ${data.department}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            <h3>Ratings:</h3>
+            <h3>Reviews:</h3>
             <ul>
-                ${data.ratings.map(rating => `
+                ${data.reviews.map(review => `
                     <li>
-                        <strong>Rating:</strong> ${rating.rating} <br>
-                        <strong>Comment:</strong> ${rating.comment}
+                        <strong>Rating:</strong> ${review.rating} <br>
+                        <strong>Comment:</strong> ${review.comment}
                     </li>
                 `).join('')}
             </ul>

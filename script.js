@@ -1,17 +1,17 @@
-// script.js
-
 const apiUrl = "http://3.138.156.10:3000"; // Base URL for the API
 
+// Fetch and display the list of professors in the dropdown
 async function loadProfessorList() {
     try {
         const response = await fetch(`${apiUrl}/professors`);
-        console.log("Response from /professors:", response);
+        console.log("Response from /professors:", response); // Debugging line
+
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
         const professors = await response.json();
-        console.log("Professor list:", professors);
-        const professorSelect = document.getElementById("professorSelect");
+        console.log("Professor list:", professors); // Debugging line
 
+        const professorSelect = document.getElementById("professorSelect");
         professors.forEach(prof => {
             const option = document.createElement("option");
             option.value = prof._id;
@@ -23,19 +23,21 @@ async function loadProfessorList() {
     }
 }
 
+// Fetch and display selected professor's data based on selected ID
 async function loadProfessorData() {
     const professorId = document.getElementById("professorSelect").value;
-    if (!professorId) return;
+    if (!professorId) return; // Exit if no professor is selected
 
     try {
         const response = await fetch(`${apiUrl}/professor/${professorId}`);
-        console.log("Response from /professor/:id:", response);
+        console.log("Response from /professor/:id:", response); // Debugging line
+
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
         const data = await response.json();
-        console.log("Selected professor data:", data);
-        const professorContainer = document.getElementById("professor-data");
+        console.log("Selected professor data:", data); // Debugging line
 
+        const professorContainer = document.getElementById("professor-data");
         professorContainer.innerHTML = `
             <h2>${data.name}</h2>
             <p><strong>Department:</strong> ${data.department}</p>

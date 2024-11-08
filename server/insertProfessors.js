@@ -39,5 +39,5 @@ async function insertDataFromFile(filePath) {
 }
 
 // Specify the path to your JSON file
-const filePath = './professors_data.json';
+const filePath = './EENG.json';
 insertDataFromFile(filePath);
