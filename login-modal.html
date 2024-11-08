@@ -1,0 +1,18 @@
+<!-- Login Modal HTML -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="yourname@my.unt.edu">
+            <button type="button" onclick="requestOTP()">Send OTP</button>
+            <div id="otpSection" style="display: none;">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" required>
+                <button type="button" onclick="verifyOTP()">Login</button>
+            </div>
+            <div id="loginMessage" style="margin-top: 10px; color: red;"></div>
+        </form>
+    </div>
+</div>
