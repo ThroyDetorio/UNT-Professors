@@ -10,6 +10,7 @@
 
     <!-- Header Section -->
     <nav>
+        <!-- Left Section: Hamburger Menu and Home Button -->
         <div class="left-section">
             <div class="hamburger">
                 <div class="menuIcon">☰</div>
@@ -18,110 +19,36 @@
             <button class="home-button" onclick="window.location.reload();">Home</button>
         </div>
 
+        <!-- Center Section: UNT Logo -->
         <div class="center-section">
             <img src="Images/lettermark_wordmark_diving_eagle_combo_black.svg" alt="UNT Logo" class="logo">
         </div>
 
+        <!-- Right Section: Report Issue and Login Buttons -->
         <div class="right-section">
-            <button class="report-button" onclick="window.location.href='report-issue.html';">Report Issue</button>
+            <button class ="report-button" onclick="window.location.href='report-issue.html';">Report Issue</button>
+            
+            <!-- Login Button -->
             <button id="loginButton">Login</button>
+            <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="yourname@my.unt.edu" required><br><br>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div id="loginMessage"></div>
+                </div>
+            </div>
         </div>
     </nav>
+    <script src="login.js"></script>
+    
 
-    <!-- Load Login Modal -->
-    <script>
-        // Load the login modal HTML from the separate file
-        fetch("login-modal.html")
-            .then(response => response.text())
-            .then(html => {
-                document.body.insertAdjacentHTML("beforeend", html);
-                setupLoginModal();
-            });
-
-        // Function to setup modal behavior
-        function setupLoginModal() {
-            document.getElementById("loginButton").onclick = () => {
-                document.getElementById("loginModal").style.display = "flex";
-            };
-
-            document.querySelector(".close").onclick = () => {
-                document.getElementById("loginModal").style.display = "none";
-            };
-
-            window.onclick = (event) => {
-                if (event.target === document.getElementById("loginModal")) {
-                    document.getElementById("loginModal").style.display = "none";
-                }
-            };
-        }
-
-        function requestOTP() {
-            const email = document.getElementById("email").value;
-            const messageDiv = document.getElementById("loginMessage");
-
-            if (email.endsWith("@my.unt.edu")) {
-                fetch("/request-otp", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ email: email })
-                }).then(response => response.json())
-                  .then(data => {
-                      if (data.success) {
-                          document.getElementById("otpSection").style.display = "block";
-                          messageDiv.style.color = "green";
-                          messageDiv.innerText = "OTP sent to your email!";
-                      } else {
-                          messageDiv.style.color = "red";
-                          messageDiv.innerText = data.message;
-                      }
-                  }).catch(error => {
-                      messageDiv.style.color = "red";
-                      messageDiv.innerText = "An error occurred. Please try again.";
-                  });
-            } else {
-                messageDiv.style.color = "red";
-                messageDiv.innerText = "Please use a valid UNT email address.";
-            }
-        }
-
-        function verifyOTP() {
-            const email = document.getElementById("email").value;
-            const otp = document.getElementById("otp").value;
-            const messageDiv = document.getElementById("loginMessage");
-
-            fetch("/verify-otp", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email: email, otp: otp })
-            }).then(response => response.json())
-              .then(data => {
-                  if (data.success) {
-                      document.getElementById("loginButton").innerText = data.name;
-                      document.getElementById("loginButton").onclick = logout;
-                      document.getElementById("loginModal").style.display = "none";
-                  } else {
-                      messageDiv.style.color = "red";
-                      messageDiv.innerText = "Invalid OTP.";
-                  }
-              }).catch(error => {
-                  messageDiv.style.color = "red";
-                  messageDiv.innerText = "An error occurred. Please try again.";
-              });
-        }
-
-        function logout() {
-            fetch("/logout", { method: "POST" }).then(() => {
-                document.getElementById("loginButton").innerText = "Login";
-                document.getElementById("loginButton").onclick = () => {
-                    document.getElementById("loginModal").style.display = "flex";
-                };
-            }).catch(error => {
-                alert("Logout failed. Please try again.");
-            });
-        }
-    </script>
-
-    <!-- Hamburger Menu Dropdown -->
+<!-- Hamburger Menu Dropdown -->
 <ul class="menu" style="display: none;">
     <li class="menuItem"><a href="index.html">Home</a></li>
     <li class="menuItem">
@@ -132,21 +59,22 @@
     </li>
     <li class="menuItem"><a href="report-issue.html">Report Issue</a></li>
 </ul>
+
     
     <!-- Carousel Section -->
     <div class="carousel-container">
         <div class="slides" id="slides">
             <!-- Each Slide -->
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7f7f/333?text=Slide+1" alt="Slide 1"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7f7fff/333?text=Slide+2" alt="Slide 2"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fff7f/333?text=Slide+3" alt="Slide 3"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ffff7f/333?text=Slide+4" alt="Slide 4"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7fff/333?text=Slide+5" alt="Slide 5"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fffff/333?text=Slide+6" alt="Slide 6"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ffbf7f/333?text=Slide+7" alt="Slide 7"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fbf7f/333?text=Slide+8" alt="Slide 8"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7fdf/333?text=Slide+9" alt="Slide 9"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/df7fff/333?text=Slide+10" alt="Slide 10"></div>
+            <div class="slide"><img src="Images/4.9.png" alt="Slide 1"></div>
+            <div class="slide"><img src="Images/4.9 (2).png" alt="Slide 2"></div>
+            <div class="slide"><img src="Images/4.8.png" alt="Slide 3"></div>
+            <div class="slide"><img src="Images/4.8 (2).png" alt="Slide 4"></div>
+            <div class="slide"><img src="Images/4.7.png" alt="Slide 5"></div>
+            <div class="slide"><img src="Images/4.7 (2).png" alt="Slide 6"></div>
+            <div class="slide"><img src="Images/4.7 (3).png" alt="Slide 7"></div>
+            <div class="slide"><img src="Images/4.7 (4).png" alt="Slide 8"></div>
+            <div class="slide"><img src="Images/4.7 (5).png" alt="Slide 9"></div>
+            <div class="slide"><img src="Images/4.7 (6).png" alt="Slide 10"></div>
         </div>
         <div class="prev" onclick="moveSlides(-1)">❮</div>
         <div class="next" onclick="moveSlides(1)">❯</div>
@@ -170,5 +98,19 @@
         // Set the interval to automatically move the slides every 10 seconds
         setInterval(autoSlide, 10000);
     </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <p>Email: <a href="mailto:contact@unt.edu">contact@unt.edu</a></p>
+                <p>Contact No: +1 (940) 565-2000</p>
+            </div>
+            <div class="footer-column">
+                <p>Office: Eagle Student Services Center</p>
+                <p>Location: 1155 Union Cir, Denton, TX 76203, USA</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
