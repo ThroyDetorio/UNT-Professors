@@ -1,0 +1,1517 @@
+[
+    {
+        "name": "Professor Jacob Hochstetler",
+        "department": "Computer Science and Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3550",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3550",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Professor Bilal Abu Bakr",
+        "department": "Computer Science and Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3530",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3530",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Faridul Islam",
+        "department": "Computer Science and Engineering",
+        "rating": 2,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4430",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4430",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Jonathon H. Doran",
+        "department": "Computer Science and Engineering",
+        "rating": 2.0,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4600",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4600",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Amar Maharjan",
+        "department": "Computer Science and Engineering",
+        "rating": 3.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4650",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4650",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Bahar Dorri",
+        "department": "Computer Science and Engineering",
+        "rating": 4.3,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4115",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4115",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Professor Rodney D. Nielsen",
+        "department": "Computer Science and Engineering",
+        "rating": 2.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4201",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4201",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Russel L. Pears",
+        "department": "Computer Science and Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4201",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4201",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Professor Bill Buckles",
+        "department": "Computer Science and Engineering",
+        "rating": 4.3,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4240",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4240",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Xiaohui Yuan",
+        "department": "Computer Science and Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4240",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4240",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Zeenat Tariq",
+        "department": "Computer Science and Engineering",
+        "rating": 4.1,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4290",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4290",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Ryan M. Garlick",
+        "department": "Computer Science and Engineering",
+        "rating": 4.8,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4350",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4290",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Amar Maharjan",
+        "department": "Computer Science and Engineering",
+        "rating": 3.3,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE1030",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE1030",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Pradhumna L. Shrestha",
+        "department": "Computer Science and Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE1030",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE1030",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Rubenia Borge O. Borge Flores",
+        "department": "Computer Science and Engineering",
+        "rating": 2.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE1040",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE1040",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Fernando Mosquera",
+        "department": "Computer Science and Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE1040",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE1040",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Bahar Dorri",
+        "department": "Computer Science and Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2100",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE2100",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Yuan Li",
+        "department": "Computer Science and Engineering",
+        "rating": 4.1,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2100",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE2100",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Curtis Chambers",
+        "department": "Computer Science and Engineering",
+        "rating": 3.1,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE2110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Gary T. James",
+        "department": "Computer Science and Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2610",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE2610",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Saqib Khalil",
+        "department": "Computer Science and Engineering",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE2610",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE2610",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Xuan Guo",
+        "department": "Computer Science and Engineering",
+        "rating": 4.4,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Faridul Islam",
+        "department": "Computer Science and Engineering",
+        "rating": 4.6,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Satya Vrvt Parupudi",
+        "department": "Computer Science and Engineering",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Wajdi Aljedaani",
+        "department": "Computer Science and Engineering",
+        "rating": 4.9,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3444",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3444",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Wajdi Aljedaani",
+        "department": "Computer Science and Engineering",
+        "rating": 4.9,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3444",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3444",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Professor Hadiseh Gooranorimi",
+        "department": "Computer Science and Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3444",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3444",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Faridul Islam",
+        "department": "Computer Science and Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3600",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3600",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Fernando Mosquera",
+        "department": "Computer Science and Engineering",
+        "rating": 4.0,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE3600",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE3600",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Jonathon H. Doran",
+        "department": "Computer Science and Engineering",
+        "rating": 1.0,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4010",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4010",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Jonathon H. Doran",
+        "department": "Computer Science and Engineering",
+        "rating": 1.0,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4010",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4010",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Faridul Islam",
+        "department": "Computer Science and Engineering",
+        "rating": 4.6,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Faridul Islam",
+        "department": "Computer Science and Engineering",
+        "rating": 4.6,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    }
+,
+    {
+        "name": "Professor Abdelnasser H. Ouda",
+        "department": "Computer Science and Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4110",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4110",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Wajdi Aljedaani",
+        "department": "Computer Science and Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4901",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4901",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Stephanie A. Ludi",
+        "department": "Computer Science and Engineering",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4901",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4901",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    }
+,
+    {
+        "name": "Professor Stephanie A. Ludi",
+        "department": "Computer Science and Engineering",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4902",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4902",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "Professor Diana Rabah",
+        "department": "Computer Science and Engineering",
+        "rating": 4.9,
+        "reviews": [
+            {
+                "student": "Alice",
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "student": "Bob",
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CSCE4902",
+                "section_number": "001",
+                "semester": "Fall 2024",
+                "schedule": {
+                    "days": ["Monday", "Wednesday"],
+                    "time": "10:00 - 11:30 AM"
+                }
+            },
+            {
+                "course_code": "CSCE4902",
+                "section_number": "002",
+                "semester": "Spring 2025",
+                "schedule": {
+                    "days": ["Tuesday", "Thursday"],
+                    "time": "1:00 - 2:30 PM"
+                }
+            }
+        ]
+    }
+]

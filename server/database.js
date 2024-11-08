@@ -1,29 +1,26 @@
-// database.js
-const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const fs = require('fs');
+const { MongoClient, ObjectId } = require('mongodb');
 require('dotenv').config();
 
 const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  },
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
+let db;
+
+// Connect to the database
 async function connectToDatabase() {
   try {
-    if (!client.isConnected) {
-      await client.connect();
-      console.log("Successfully connected to MongoDB!");
-    }
+    await client.connect();
+    db = client.db("university_database"); // Connect to your database
+    console.log("Connected to MongoDB!");
   } catch (error) {
     console.error("MongoDB connection error:", error);
   }
 }
 
-// Function to close the database connection
+// Close the database connection
 async function closeConnection() {
   try {
     await client.close();
@@ -33,73 +30,31 @@ async function closeConnection() {
   }
 }
 
-
-// Function to insert a professor
-async function addProfessor(professorData) {
+// Fetch all professors
+async function getProfessorList() {
   try {
-    const database = client.db("your_database_name"); // replace with your database name
-    const professors = database.collection("professors");
-    const result = await professors.insertOne(professorData);
-    console.log(`Professor added with _id: ${result.insertedId}`);
-    return result.insertedId;
+    const professors = await db.collection("professors").find({}).toArray();
+    return professors;
   } catch (error) {
-    console.error("Error adding professor:", error);
+    console.error("Error fetching professor list:", error);
+    throw error;
   }
 }
 
-// Function to add a rating for a professor
-async function addRating(professorId, ratingData) {
+// Fetch a single professor by ID with detailed data
+async function getProfessorById(professorId) {
   try {
-    const database = client.db("your_database_name");
-    const ratings = database.collection("ratings");
-    const result = await ratings.insertOne({ professorId: new ObjectId(professorId), ...ratingData });
-    console.log(`Rating added with _id: ${result.insertedId}`);
+    const professor = await db.collection("professors").findOne({ _id: new ObjectId(professorId) });
+    return professor;
   } catch (error) {
-    console.error("Error adding rating:", error);
+    console.error("Error fetching professor:", error);
+    throw error;
   }
 }
 
-// Function to get a professor with all ratings
-async function getProfessorWithRatings(professorId) {
-  try {
-    const database = client.db("your_database_name");
-    const professors = database.collection("professors");
-    const ratings = database.collection("ratings");
-
-    // Fetch professor details using ObjectId
-    const professor = await professors.findOne({ _id: new ObjectId(professorId) });
-    if (!professor) {
-      console.log("Professor not found");
-      return null;
-    }
-
-    // Fetch ratings for the professor using ObjectId
-    const professorRatings = await ratings.find({ professorId: new ObjectId(professorId) }).toArray();
-    return { ...professor, ratings: professorRatings };
-  } catch (error) {
-    console.error("Error retrieving professor with ratings:", error);
-  }
-}
-
-// Optional function to insert users from a file (if needed for testing)
-async function insertUsersFromFile(filePath) {
-  try {
-    await client.connect();
-    const database = client.db("your_database_name");
-    const users = database.collection("users");
-
-    // Read and parse the JSON file
-    const fileData = fs.readFileSync(filePath, 'utf-8');
-    const usersArray = JSON.parse(fileData);
-
-    // Insert users into MongoDB
-    const result = await users.insertMany(usersArray);
-    console.log(`${result.insertedCount} users inserted.`);
-  } catch (error) {
-    console.error("Error inserting users from file:", error);
-  } finally {
-    await client.close();
-  }
-}
-
-module.exports = { connectToDatabase, closeConnection, addProfessor, addRating, getProfessorWithRatings, insertUsersFromFile };
+module.exports = {
+  connectToDatabase,
+  closeConnection,
+  getProfessorList,
+  getProfessorById,
+};
