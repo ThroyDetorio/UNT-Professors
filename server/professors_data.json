@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Professor John Doe",
+        "department": "Computer Science",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "comment": "Very clear explanations.",
+                "rating": 4.8,
+                "date": "2024-11-01"
+            },
+            {
+                "comment": "Helpful and approachable.",
+                "rating": 4.6,
+                "date": "2024-11-02"
+            }
+        ],
+        "sections": [
+            {
+                "course_code": "CS101",
+                "section_number": "001",
+                "semester": "Fall 2024"
+            },
+            {
+                "course_code": "CS102",
+                "section_number": "002",
+                "semester": "Spring 2025"
+                
+            }
+        ]
+    }
+]

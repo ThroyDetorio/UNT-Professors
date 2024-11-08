@@ -1,31 +1,48 @@
-// server.js
 const express = require("express");
-const { connectToDatabase, closeConnection, getProfessorWithRatings } = require("./database");
+const cors = require("cors");
+const { connectToDatabase, closeConnection, getProfessorList, getProfessorById } = require("./database");
 
 const app = express();
 const PORT = 3000;
 
-// Connect to the database
-app.use(async (req, res, next) => {
-  await connectToDatabase();
-  next();
-});
+app.use(cors());
+app.use(express.json());
 
-// Endpoint to get professor by ID along with ratings
-app.get("/professor/:id", async (req, res) => {
-  const professorId = req.params.id;
-  const professorData = await getProfessorWithRatings(professorId);
-  if (professorData) {
-    res.json(professorData);
-  } else {
-    res.status(404).json({ message: "Professor not found" });
+(async () => {
+  await connectToDatabase();
+})();
+
+// Route to get a list of all professors
+app.get("/professors", async (req, res) => {
+  try {
+    const professors = await getProfessorList();
+    res.json(professors);
+  } catch (error) {
+    console.error("Error retrieving professor list:", error);
+    res.status(500).json({ error: "Failed to retrieve professor list" });
   }
 });
 
-// Close database connection on exit
-app.use(async (req, res, next) => {
+// Route to get details of a professor by ID
+app.get("/professor/:id", async (req, res) => {
+  try {
+    const professorId = req.params.id;
+    const professor = await getProfessorById(professorId);
+    if (professor) {
+      res.json(professor);
+    } else {
+      res.status(404).json({ error: "Professor not found" });
+    }
+  } catch (error) {
+    console.error("Error retrieving professor data:", error);
+    res.status(500).json({ error: "Failed to retrieve professor data" });
+  }
+});
+
+// Close the database connection when the server stops
+process.on("SIGINT", async () => {
   await closeConnection();
-  next();
+  process.exit(0);
 });
 
 app.listen(PORT, () => {
