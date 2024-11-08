@@ -36,109 +36,16 @@
                     <span class="close">&times;</span>
                     <h2>Login</h2>
                     <form id="loginForm">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="yourname@my.unt.edu">
-                        <button type="button" onclick="requestOTP()">Send OTP</button>
-                        <div id="otpSection">
-                            <label for="otp">Enter OTP:</label>
-                            <input type="text" id="otp" name="otp" required>
-                            <button type="button" onclick="verifyOTP()">Login</button>
-                        </div>
-                        <div id="loginMessage" style="margin-top: 10px; color: red;"></div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="yourname@my.unt.edu" required><br><br>
+                        <button type="submit">Login</button>
                     </form>
+                    <div id="loginMessage"></div>
                 </div>
             </div>
         </div>
     </nav>
-
-    <script>
-        // Show modal on login button click
-        document.getElementById("loginButton").onclick = () => {
-            document.getElementById("loginModal").style.display = "flex";
-        };
-
-        // Close modal on clicking the 'x'
-        document.querySelector(".close").onclick = () => {
-            document.getElementById("loginModal").style.display = "none";
-        };
-
-        // Hide modal if clicking outside of it
-        window.onclick = (event) => {
-            if (event.target === document.getElementById("loginModal")) {
-                document.getElementById("loginModal").style.display = "none";
-            }
-        };
-
-        // Request OTP function
-        function requestOTP() {
-            const email = document.getElementById("email").value;
-            const messageDiv = document.getElementById("loginMessage");
-
-            // Validate UNT email domain
-            if (email.endsWith("@my.unt.edu")) {
-                fetch("/request-otp", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ email: email })
-                }).then(response => response.json())
-                  .then(data => {
-                      if (data.success) {
-                          document.getElementById("otpSection").style.display = "block";
-                          messageDiv.style.color = "green";
-                          messageDiv.innerText = "OTP sent to your email!";
-                      } else {
-                          messageDiv.style.color = "red";
-                          messageDiv.innerText = data.message;
-                      }
-                  }).catch(error => {
-                      messageDiv.style.color = "red";
-                      messageDiv.innerText = "An error occurred. Please try again.";
-                  });
-            } else {
-                messageDiv.style.color = "red";
-                messageDiv.innerText = "Please use a valid UNT email address.";
-            }
-        }
-
-        // Verify OTP function
-        function verifyOTP() {
-            const email = document.getElementById("email").value;
-            const otp = document.getElementById("otp").value;
-            const messageDiv = document.getElementById("loginMessage");
-
-            fetch("/verify-otp", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email: email, otp: otp })
-            }).then(response => response.json())
-              .then(data => {
-                  if (data.success) {
-                      // Update login button with user's name and enable logout
-                      document.getElementById("loginButton").innerText = data.name;
-                      document.getElementById("loginButton").onclick = logout;
-                      document.getElementById("loginModal").style.display = "none";
-                  } else {
-                      messageDiv.style.color = "red";
-                      messageDiv.innerText = "Invalid OTP.";
-                  }
-              }).catch(error => {
-                  messageDiv.style.color = "red";
-                  messageDiv.innerText = "An error occurred. Please try again.";
-              });
-        }
-
-        // Logout function
-        function logout() {
-            fetch("/logout", { method: "POST" }).then(() => {
-                document.getElementById("loginButton").innerText = "Login";
-                document.getElementById("loginButton").onclick = () => {
-                    document.getElementById("loginModal").style.display = "flex";
-                };
-            }).catch(error => {
-                alert("Logout failed. Please try again.");
-            });
-        }
-    </script>
+    <script src="login.js"></script>
     
     <!-- Hamburger Menu Dropdown -->
 <ul class="menu" style="display: none;">
@@ -146,26 +53,29 @@
     <li class="menuItem">
         <a href="college-majors.html">College Majors</a>
         <ul class="sub-menu" style="display: none;">
-            <li><a href="test.html">Professors</a></li>
+            <li><a href="compeng.html">Computer Engineering</a></li>
+            <li><a href="compsci.html">Computer Science</a></li>
+            <li><a href="infotech.html">Information Technology</a></li>
         </ul>
     </li>
     <li class="menuItem"><a href="report-issue.html">Report Issue</a></li>
+    <li class="menuItem"><a href="test.html">Test</a></li>
 </ul>
     
     <!-- Carousel Section -->
     <div class="carousel-container">
         <div class="slides" id="slides">
             <!-- Each Slide -->
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7f7f/333?text=Slide+1" alt="Slide 1"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7f7fff/333?text=Slide+2" alt="Slide 2"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fff7f/333?text=Slide+3" alt="Slide 3"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ffff7f/333?text=Slide+4" alt="Slide 4"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7fff/333?text=Slide+5" alt="Slide 5"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fffff/333?text=Slide+6" alt="Slide 6"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ffbf7f/333?text=Slide+7" alt="Slide 7"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/7fbf7f/333?text=Slide+8" alt="Slide 8"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/ff7fdf/333?text=Slide+9" alt="Slide 9"></div>
-            <div class="slide"><img src="https://via.placeholder.com/1500x400/df7fff/333?text=Slide+10" alt="Slide 10"></div>
+            <div class="slide"><img src="Images/4.9.png" alt="Slide 1"></div>
+            <div class="slide"><img src="Images/4.9 (2).png" alt="Slide 2"></div>
+            <div class="slide"><img src="Images/4.8.png" alt="Slide 3"></div>
+            <div class="slide"><img src="Images/4.8 (2).png" alt="Slide 4"></div>
+            <div class="slide"><img src="Images/4.7.png" alt="Slide 5"></div>
+            <div class="slide"><img src="Images/4.7 (2).png" alt="Slide 6"></div>
+            <div class="slide"><img src="Images/4.7 (3).png" alt="Slide 7"></div>
+            <div class="slide"><img src="Images/4.7 (4).png" alt="Slide 8"></div>
+            <div class="slide"><img src="Images/4.7 (5).png" alt="Slide 9"></div>
+            <div class="slide"><img src="Images/4.7 (6).png" alt="Slide 10"></div>
         </div>
         <div class="prev" onclick="moveSlides(-1)">❮</div>
         <div class="next" onclick="moveSlides(1)">❯</div>
@@ -189,5 +99,19 @@
         // Set the interval to automatically move the slides every 10 seconds
         setInterval(autoSlide, 10000);
     </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <p>Email: <a href="mailto:contact@unt.edu">contact@unt.edu</a></p>
+                <p>Contact No: +1 (940) 565-2000</p>
+            </div>
+            <div class="footer-column">
+                <p>Office: Eagle Student Services Center</p>
+                <p>Location: 1155 Union Cir, Denton, TX 76203, USA</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

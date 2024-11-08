@@ -97,7 +97,7 @@ nav button {
 .carousel-container {
     position: relative;
     max-width: 100%;
-    height: 400px;
+    height: 600px;
     margin: auto;
     overflow: hidden;
 }
@@ -115,7 +115,7 @@ nav button {
 
 .slide img {
     width: 100%;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -167,6 +167,20 @@ nav button {
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+
+#userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logoutButton {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 #loginMessage {
@@ -271,3 +285,50 @@ nav button {
 .menuItem:hover .sub-menu {
     display: block;
 }
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer styles */
+footer {
+    background-color: #90ee90; /* Match header background color */
+    color: black;
+    padding: 20px;
+    text-align: left; /* Align text to the left within columns */
+    font-family: Arial, sans-serif; /* Match font with header */
+    font-size: 14px;
+    display: flex;
+    justify-content: center; /* Center the footer content */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    max-width: 800px; /* Restrict width for better readability */
+    justify-content: space-between; /* Space out the two columns */
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Adjust to create spacing between columns */
+}
+
+.footer-column p {
+    margin: 5px 0; /* Space out each line */
+}
+
+.footer-content a {
+    color: black; /* Match text color */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
