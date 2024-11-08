@@ -70,5 +70,19 @@ async function loadProfessorData() {
     }
 }
 
+
+async function loadProfessorList() {
+    try {
+        const response = await fetch('https://example.com/professors');
+        if (!response.ok) {
+            throw new Error(`Error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error loading professor list:', error);
+    }
+}
+
 // Load the professor list on page load
 loadProfessorList();
