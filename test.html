@@ -6,6 +6,160 @@
     <title>Professor Ratings</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNT Professor's Rating</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav>
+        <!-- Left Section: Hamburger Menu and Home Button -->
+        <div class="left-section">
+            <div class="hamburger">
+                <div class="menuIcon">☰</div>
+                <div class="closeIcon" style="display: none;">✖</div>
+            </div>
+            <button class="home-button" onclick="window.location.reload();">Home</button>
+        </div>
+
+        <!-- Center Section: UNT Logo -->
+        <div class="center-section">
+            <img src="Images/lettermark_wordmark_diving_eagle_combo_black.svg" alt="UNT Logo" class="logo">
+        </div>
+
+        <!-- Right Section: Report Issue and Login Buttons -->
+        <div class="right-section">
+            <button class ="report-button" onclick="window.location.href='report-issue.html';">Report Issue</button>
+            
+            <!-- Login Button -->
+            <button id="loginButton">Login</button>
+            <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="yourname@my.unt.edu">
+                        <button type="button" onclick="requestOTP()">Send OTP</button>
+                        <div id="otpSection">
+                            <label for="otp">Enter OTP:</label>
+                            <input type="text" id="otp" name="otp" required>
+                            <button type="button" onclick="verifyOTP()">Login</button>
+                        </div>
+                        <div id="loginMessage" style="margin-top: 10px; color: red;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Show modal on login button click
+        document.getElementById("loginButton").onclick = () => {
+            document.getElementById("loginModal").style.display = "flex";
+        };
+
+        // Close modal on clicking the 'x'
+        document.querySelector(".close").onclick = () => {
+            document.getElementById("loginModal").style.display = "none";
+        };
+
+        // Hide modal if clicking outside of it
+        window.onclick = (event) => {
+            if (event.target === document.getElementById("loginModal")) {
+                document.getElementById("loginModal").style.display = "none";
+            }
+        };
+
+        // Request OTP function
+        function requestOTP() {
+            const email = document.getElementById("email").value;
+            const messageDiv = document.getElementById("loginMessage");
+
+            // Validate UNT email domain
+            if (email.endsWith("@my.unt.edu")) {
+                fetch("/request-otp", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email: email })
+                }).then(response => response.json())
+                  .then(data => {
+                      if (data.success) {
+                          document.getElementById("otpSection").style.display = "block";
+                          messageDiv.style.color = "green";
+                          messageDiv.innerText = "OTP sent to your email!";
+                      } else {
+                          messageDiv.style.color = "red";
+                          messageDiv.innerText = data.message;
+                      }
+                  }).catch(error => {
+                      messageDiv.style.color = "red";
+                      messageDiv.innerText = "An error occurred. Please try again.";
+                  });
+            } else {
+                messageDiv.style.color = "red";
+                messageDiv.innerText = "Please use a valid UNT email address.";
+            }
+        }
+
+        // Verify OTP function
+        function verifyOTP() {
+            const email = document.getElementById("email").value;
+            const otp = document.getElementById("otp").value;
+            const messageDiv = document.getElementById("loginMessage");
+
+            fetch("/verify-otp", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email: email, otp: otp })
+            }).then(response => response.json())
+              .then(data => {
+                  if (data.success) {
+                      // Update login button with user's name and enable logout
+                      document.getElementById("loginButton").innerText = data.name;
+                      document.getElementById("loginButton").onclick = logout;
+                      document.getElementById("loginModal").style.display = "none";
+                  } else {
+                      messageDiv.style.color = "red";
+                      messageDiv.innerText = "Invalid OTP.";
+                  }
+              }).catch(error => {
+                  messageDiv.style.color = "red";
+                  messageDiv.innerText = "An error occurred. Please try again.";
+              });
+        }
+
+        // Logout function
+        function logout() {
+            fetch("/logout", { method: "POST" }).then(() => {
+                document.getElementById("loginButton").innerText = "Login";
+                document.getElementById("loginButton").onclick = () => {
+                    document.getElementById("loginModal").style.display = "flex";
+                };
+            }).catch(error => {
+                alert("Logout failed. Please try again.");
+            });
+        }
+    </script>
+    
+    <!-- Hamburger Menu Dropdown -->
+<ul class="menu" style="display: none;">
+    <li class="menuItem"><a href="index.html">Home</a></li>
+    <li class="menuItem">
+        <a href="college-majors.html">College Majors</a>
+        <ul class="sub-menu" style="display: none;">
+            <li><a href="test.html">Professors</a></li>
+        </ul>
+    </li>
+    <li class="menuItem"><a href="report-issue.html">Report Issue</a></li>
+</ul>
+    
     <h1>Professor Ratings</h1>
 
     <!-- Dropdown to select a professor -->
