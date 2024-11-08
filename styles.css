@@ -147,7 +147,7 @@ nav button {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     justify-content: center;
     align-items: center;
 }
@@ -159,6 +159,7 @@ nav button {
     width: 300px;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
 }
 
 .close {
@@ -188,7 +189,8 @@ nav button {
     color: red;
 }
 
-#loginForm input[type="text"], #loginForm input[type="password"] {
+/* Input fields inside the login modal */
+#loginForm input[type="text"], #loginForm input[type="email"], #loginForm input[type="password"] {
     width: 100%;
     padding: 8px;
     margin: 6px 0;
@@ -198,18 +200,36 @@ nav button {
     box-sizing: border-box;
 }
 
-/* Button styles */
-.default {
-    border-color: #e7e7e7;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: white;
+/* Button styles inside the login modal */
+#loginForm button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #90ee90;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.default:hover {
-    background: #e7e7e7;
+#loginForm button:hover {
+    background-color: #7ed957;
+}
+
+/* Responsive Design for Modal */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    #loginForm button {
+        padding: 8px 16px;
+    }
+
+    #loginForm input[type="text"], #loginForm input[type="email"] {
+        padding: 8px;
+    }
 }
 
 /* Report issue page styles */
@@ -218,7 +238,7 @@ nav button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px); /* Adjust for header height */
     padding: 20px;
 }
 
