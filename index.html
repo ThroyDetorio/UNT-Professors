@@ -10,7 +10,6 @@
 
     <!-- Header Section -->
     <nav>
-        <!-- Left Section: Hamburger Menu and Home Button -->
         <div class="left-section">
             <div class="hamburger">
                 <div class="menuIcon">☰</div>
@@ -19,62 +18,47 @@
             <button class="home-button" onclick="window.location.reload();">Home</button>
         </div>
 
-        <!-- Center Section: UNT Logo -->
         <div class="center-section">
             <img src="Images/lettermark_wordmark_diving_eagle_combo_black.svg" alt="UNT Logo" class="logo">
         </div>
 
-        <!-- Right Section: Report Issue and Login Buttons -->
         <div class="right-section">
-            <button class ="report-button" onclick="window.location.href='report-issue.html';">Report Issue</button>
-            
-            <!-- Login Button -->
+            <button class="report-button" onclick="window.location.href='report-issue.html';">Report Issue</button>
             <button id="loginButton">Login</button>
-            <!-- Login Modal -->
-            <div id="loginModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Login</h2>
-                    <form id="loginForm">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="yourname@my.unt.edu">
-                        <button type="button" onclick="requestOTP()">Send OTP</button>
-                        <div id="otpSection">
-                            <label for="otp">Enter OTP:</label>
-                            <input type="text" id="otp" name="otp" required>
-                            <button type="button" onclick="verifyOTP()">Login</button>
-                        </div>
-                        <div id="loginMessage" style="margin-top: 10px; color: red;"></div>
-                    </form>
-                </div>
-            </div>
         </div>
     </nav>
 
+    <!-- Load Login Modal -->
     <script>
-        // Show modal on login button click
-        document.getElementById("loginButton").onclick = () => {
-            document.getElementById("loginModal").style.display = "flex";
-        };
+        // Load the login modal HTML from the separate file
+        fetch("login-modal.html")
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML("beforeend", html);
+                setupLoginModal();
+            });
 
-        // Close modal on clicking the 'x'
-        document.querySelector(".close").onclick = () => {
-            document.getElementById("loginModal").style.display = "none";
-        };
+        // Function to setup modal behavior
+        function setupLoginModal() {
+            document.getElementById("loginButton").onclick = () => {
+                document.getElementById("loginModal").style.display = "flex";
+            };
 
-        // Hide modal if clicking outside of it
-        window.onclick = (event) => {
-            if (event.target === document.getElementById("loginModal")) {
+            document.querySelector(".close").onclick = () => {
                 document.getElementById("loginModal").style.display = "none";
-            }
-        };
+            };
 
-        // Request OTP function
+            window.onclick = (event) => {
+                if (event.target === document.getElementById("loginModal")) {
+                    document.getElementById("loginModal").style.display = "none";
+                }
+            };
+        }
+
         function requestOTP() {
             const email = document.getElementById("email").value;
             const messageDiv = document.getElementById("loginMessage");
 
-            // Validate UNT email domain
             if (email.endsWith("@my.unt.edu")) {
                 fetch("/request-otp", {
                     method: "POST",
@@ -100,7 +84,6 @@
             }
         }
 
-        // Verify OTP function
         function verifyOTP() {
             const email = document.getElementById("email").value;
             const otp = document.getElementById("otp").value;
@@ -113,7 +96,6 @@
             }).then(response => response.json())
               .then(data => {
                   if (data.success) {
-                      // Update login button with user's name and enable logout
                       document.getElementById("loginButton").innerText = data.name;
                       document.getElementById("loginButton").onclick = logout;
                       document.getElementById("loginModal").style.display = "none";
@@ -127,7 +109,6 @@
               });
         }
 
-        // Logout function
         function logout() {
             fetch("/logout", { method: "POST" }).then(() => {
                 document.getElementById("loginButton").innerText = "Login";
@@ -139,7 +120,7 @@
             });
         }
     </script>
-    
+
     <!-- Hamburger Menu Dropdown -->
 <ul class="menu" style="display: none;">
     <li class="menuItem"><a href="index.html">Home</a></li>
