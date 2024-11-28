@@ -1,0 +1,780 @@
+[{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Jacob Hochstetler",
+    "Course_code": "CSCE3550",
+    "Course_name": "Foundations of Cybersecurity",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Bilal Abu Bakr",
+    "Course_code": "CSCE3530",
+    "Course_name": "Intro to Computer Networks",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Faridul Islam",
+    "Course_code": "CSCE4430",
+    "Course_name": "Programming Languages",
+    "Avg_Rating": 2.0,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Jonathon H. Doran",
+    "Course_code": "CSCE4600",
+    "Course_name": "Intro to Operating Systems",
+    "Avg_Rating": 2.0,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Amar Maharjan",
+    "Course_code": "CSCE4650",
+    "Course_name": "Intro to Compilation Techniques",
+    "Avg_Rating": 3.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Bahar Dorri",
+    "Course_code": "CSCE4115",
+    "Course_name": "Formal Languages, Automata and Computability",
+    "Avg_Rating": 4.3,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Rodney D. Nielsen",
+    "Course_code": "CSCE4201",
+    "Course_name": "Intro to Artificial Intelligence",
+    "Avg_Rating": 2.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Russel L. Pears",
+    "Course_code": "CSCE4201",
+    "Course_name": "Intro to Artificial Intelligence",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Bill Buckles",
+    "Course_code": "CSCE4240",
+    "Course_name": "Intro to Digital Image Processing",
+    "Avg_Rating": 4.3,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Xiaohui Yuan",
+    "Course_code": "CSCE4240",
+    "Course_name": "Intro to Digital Image Processing",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Zeenat Tariq",
+    "Course_code": "CSCE4290",
+    "Course_name": "Intro to Natural Language Processing",
+    "Avg_Rating": 4.1,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Ryan M. Garlick",
+    "Course_code": "CSCE4350",
+    "Course_name": "Fundamentals of Database Systems",
+    "Avg_Rating": 4.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Amar Maharjan",
+    "Course_code": "CSCE1030",
+    "Course_name": "Computer Science I",
+    "Avg_Rating": 3.3,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Pradhumna L. Shrestha",
+    "Course_code": "CSCE1030",
+    "Course_name": "Computer Science I",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Rubenia Borge O. Borge Flores",
+    "Course_code": "CSCE1040",
+    "Course_name": "Computer Science II",
+    "Avg_Rating": 2.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Fernando Mosquera",
+    "Course_code": "CSCE1040",
+    "Course_name": "Computer Science II",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Bahar Dorri",
+    "Course_code": "CSCE2100",
+    "Course_name": "Computing Foundations",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Yuan Li",
+    "Course_code": "CSCE2100",
+    "Course_name": "Computing Foundations",
+    "Avg_Rating": 4.1,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Curtis Chambers",
+    "Course_code": "CSCE2110",
+    "Course_name": "Computing Foundations II",
+    "Avg_Rating": 3.1,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Gary T. James",
+    "Course_code": "CSCE2610",
+    "Course_name": "Assembly Language & Computer Organization",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Saqib Khalil",
+    "Course_code": "CSCE2610",
+    "Course_name": "Assembly Language & Computer Organization",
+    "Avg_Rating": 3.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Xuan Guo",
+    "Course_code": "CSCE3110",
+    "Course_name": "Data Structures and Algorithms",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Faridul Islam",
+    "Course_code": "CSCE3110",
+    "Course_name": "Data Structures and Algorithms",
+    "Avg_Rating": 4.6,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Satya Vrvt Parupudi",
+    "Course_code": "CSCE3110",
+    "Course_name": "Data Structures and Algorithms",
+    "Avg_Rating": 3.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Wajdi Aljedaani",
+    "Course_code": "CSCE3444",
+    "Course_name": "Software Engineering",
+    "Avg_Rating": 4.9,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Hadiseh Gooranorimi",
+    "Course_code": "CSCE3444",
+    "Course_name": "Software Engineering",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Faridul Islam",
+    "Course_code": "CSCE3600",
+    "Course_name": "Systems Programming",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Fernando Mosquera",
+    "Course_code": "CSCE3600",
+    "Course_name": "Systems Programming",
+    "Avg_Rating": 4.0,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Jonathon H. Doran",
+    "Course_code": "CSCE4010",
+    "Course_name": "Social Issues in Computing",
+    "Avg_Rating": 1.0,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Jonathon H. Doran",
+    "Course_code": "CSCE4010",
+    "Course_name": "Social Issues in Computing",
+    "Avg_Rating": 1.0,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Faridul Islam",
+    "Course_code": "CSCE4110",
+    "Course_name": "Algorithms",
+    "Avg_Rating": 4.6,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Faridul Islam",
+    "Course_code": "CSCE4110",
+    "Course_name": "Algorithms",
+    "Avg_Rating": 4.6,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Abdelnasser H. Ouda",
+    "Course_code": "CSCE4110",
+    "Course_name": "Algorithms",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Wajdi Aljedaani",
+    "Course_code": "CSCE4901",
+    "Course_name": "Software Development Capstone I",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Stephanie A. Ludi",
+    "Course_code": "CSCE4901",
+    "Course_name": "Software Development Capstone I",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Stephanie A. Ludi",
+    "Course_code": "CSCE4902",
+    "Course_name": "Software Development Capstone II",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Science",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Diana Rabah",
+    "Course_code": "CSCE4902",
+    "Course_name": "Software Development Capstone II",
+    "Avg_Rating": 4.9,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+}]

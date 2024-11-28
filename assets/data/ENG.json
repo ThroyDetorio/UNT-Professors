@@ -1,0 +1,507 @@
+[{
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Robert Akl",
+    "Course_code": "CSCE3020",
+    "Course_name": "Communications Systems",
+    "Avg_Rating": 3.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Shahram D. Rohani",
+    "Course_code": "EENG2610",
+    "Course_name": "Circuit Analysis",
+    "Avg_Rating": 1.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Shuping Wang",
+    "Course_code": "EENG3510",
+    "Course_name": "Electronics I (Devices and Materials)",
+    "Avg_Rating": 2,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{   
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Robin J. Pottathuparambil",
+    "Course_code": "CSCE4915",
+    "Course_name": "Computer Engineering Design II",
+    "Avg_Rating": 2.0,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Paul Tarau",
+    "Course_code": "CSCE2100",
+    "Course_name": "Foundations of Computing",
+    "Avg_Rating": 3.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Tom Derryberry",
+    "Course_code": "EENG2710",
+    "Course_name": "Digital Logic Design",
+    "Avg_Rating": 4.3,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Jungkwun Kim",
+    "Course_code": "EENG3511",
+    "Course_name": "Electronics I Lab",
+    "Avg_Rating": 2.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Hung Luyen",
+    "Course_code": "EENG2610",
+    "Course_name": "Circuit Analysis",
+    "Avg_Rating": 4.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Asif Baba",
+    "Course_code": "CSCE4010",
+    "Course_name": "Social Issues in Computing",
+    "Avg_Rating": 4.3,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Ram Dantu",
+    "Course_code": "CSCE6581",
+    "Course_name": "Advanced Topics in Computer Networks",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Miguel Acevedo",
+    "Course_code": "EENG2920",
+    "Course_name": "Analog and Digital Circuit Design Project",
+    "Avg_Rating": 4.1,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Sensong An",
+    "Course_code": "EENG3411",
+    "Course_name": "Engineering Electromagnetics Lab",
+    "Avg_Rating": 4.8,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Colleen Bailey",
+    "Course_code": "EENG2610",
+    "Course_name": "Circuit Analysis",
+    "Avg_Rating": 3.3,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Shengli Fu",
+    "Course_code": "EENG1910",
+    "Course_name": "Introduction to Electrical Engineering",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Parthasarathy Guturu",
+    "Course_code": "EENG4810",
+    "Course_name": "Computer Networks",
+    "Avg_Rating": 2.7,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Elias Kougianos",
+    "Course_code": "EENG2711",
+    "Course_name": "Digital Logic Design Lab",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Gayatri Mehta",
+    "Course_code": "EENG4760",
+    "Course_name": "Reconfigurable Computing",
+    "Avg_Rating": 4.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor King man Siu",
+    "Course_code": "EENG3510",
+    "Course_name": "Electronics I (Devices and Materials)",
+    "Avg_Rating": 4.1,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Hyusim Park",
+    "Course_code": "EENG2610",
+    "Course_name": "Circuit Analysis",
+    "Avg_Rating": 3.1,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Kamesh Namuduri",
+    "Course_code": "EENG3810",
+    "Course_name": "Communications Systems",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Electrical Engineering",
+    "Name": "Professor Hua Sun",
+    "Course_code": "EENG4510",
+    "Course_name": "Digital Communications",
+    "Avg_Rating": 3.5,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+},{
+    "Major": "Computer Engineering",
+    "Department": "Computer Science and Engineering",
+    "Name": "Professor Beddhu Murali",
+    "Course_code": "CSCE2100",
+    "Course_name": "Foundations of Computing",
+    "Avg_Rating": 4.4,
+    "Reviews": [
+        {
+            "Student": "Alice",
+            "semester": "Fall 2024",
+            "Comment": "Very clear explanations.",
+            "Rating": 4.8,
+            "Date": "2024-11-01"
+        },
+        {
+            "Student": "Bob",
+            "semester": "Fall 2024",
+            "Comment": "Helpful and approachable.",
+            "Rating": 4.6,
+            "Date": "2024-11-02"
+        }
+    ]
+}]
